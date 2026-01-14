@@ -1,0 +1,183 @@
+/* =========================================
+   1. LAYOUT CHIA CỘT
+   ========================================= */
+.app__container-size {
+    min-height: 500px; 
+    padding-bottom: 50px;
+}
+
+.padding-table {
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.colf-9 {
+    flex: 0 0 68%;
+    max-width: 68%;
+}
+
+.colf-3 {
+    flex: 0 0 30%;
+    max-width: 30%;
+}
+
+@media screen and (max-width: 768px) {
+    .row { flex-wrap: wrap; }
+    .colf-9, .colf-3 { flex: 0 0 100%; max-width: 100%; }
+}
+
+/* =========================================
+   2. BẢNG SẢN PHẨM & TIÊU ĐỀ
+   ========================================= */
+.title {
+    font-weight: 800;
+    font-size: 22px;
+    color: #E34426;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    border-left: 6px solid #E34426;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.table-prod {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.table-prod th {
+    text-align: center;
+    padding: 15px 10px;
+    background-color: #fcece9;
+    border-bottom: 2px solid #E34426;
+    color: #c0392b;
+    font-weight: bold;
+}
+
+.table-prod td {
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.table-prod td:nth-child(2) {
+    text-align: left;
+}
+
+.table-prod img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+/* Style cho bộ nút cộng trừ số lượng */
+.qty-box {
+    display: inline-flex;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.qty-btn {
+    width: 30px;
+    height: 30px;
+    border: none;
+    background-color: #f1f1f1;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.2s;
+}
+
+.qty-btn:hover {
+    background-color: #E34426;
+    color: white;
+}
+
+.qty-input {
+    width: 40px;
+    height: 30px;
+    text-align: center;
+    border: none;
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    font-weight: bold;
+    outline: none;
+}
+
+/* =========================================
+   3. KHU VỰC THANH TOÁN
+   ========================================= */
+.table-right {
+    width: 100%;
+    margin-bottom: 20px;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.table-right .title {
+    font-size: 16px;
+    border: none;
+    background: none;
+    box-shadow: none;
+    padding: 0 0 10px 0;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    color: #333;
+    text-transform: none;
+}
+
+.table-right td { padding: 8px 0; font-size: 14px; }
+.table-right .price { text-align: right; color: #E34426; font-size: 20px; font-weight: bold; }
+
+.payment-form {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 15px;
+}
+
+.payment-form h4 {
+    margin-top: 0; margin-bottom: 15px; font-size: 15px;
+    color: #333; font-weight: bold; border-bottom: 1px solid #ddd; padding-bottom: 8px;
+}
+
+.form-group { margin-bottom: 15px; }
+.form-group label { display: block; margin-bottom: 5px; font-size: 13px; font-weight: 600; color: #555; }
+.form-control { width: 100%; padding: 8px; border: 1px solid #ccc; border-radius: 4px; font-size: 13px; box-sizing: border-box; }
+.form-control:focus { border-color: #E34426; outline: none; }
+
+.pay { margin-top: 15px; }
+.pay button {
+    width: 100%; padding: 12px; font-size: 14px; font-weight: bold; color: white;
+    background: #E34426; border: none; border-radius: 4px; cursor: pointer;
+    text-transform: uppercase; transition: background 0.3s;
+}
+.pay button:hover { background: #c0392b; }
+
+/* Menu User */
+.header__navbar-user-menu { display: none; position: absolute; z-index: 10; top: 100%; right: 0; background-color: white; width: 160px; box-shadow: 0 2px 5px rgba(0,0,0,0.2); border-radius: 2px; }
+.header__navbar-user:hover .header__navbar-user-menu { display: block; }

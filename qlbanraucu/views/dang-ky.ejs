@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/Font/fontawesome-free-6.7.2-web/css/all.min.css">
+    <script src="/js/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div><img src="/img/ruou-hoa-qua-trai-cay-1200x675.jpg" class="khung"></div>
+    <div class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__body">
+            <div class="auth-form">
+                <div class="auth-form__container">
+                    <div class="auth-form__header">
+                        <h3 class="auth-form__heading">Đăng Ký</h3>
+                        <a href="/dang-nhap" class="auth-form__switch-btn">Đăng Nhập</a>
+                    </div>
+                    <div class="auth-form__form">
+                        <div class="auth-form__group"><input type="text" id="tenkh" class="auth-form__input" placeholder="Nhập tên của bạn"></div>
+                        <div class="auth-form__group"><input type="text" id="sdtkh" class="auth-form__input" placeholder="Nhập số điện thoại"></div>
+                        <div class="auth-form__group"><input type="text" id="emailkh" class="auth-form__input" placeholder="Nhập email"></div>
+                        <div class="auth-form__group"><input type="text" id="diachikh" class="auth-form__input" placeholder="Nhập địa chỉ"></div>
+                        <div class="auth-form__group"><input type="password" id="mkkh" class="auth-form__input" placeholder="Nhập mật khẩu"></div>
+                        <div class="auth-form__group"><input type="password" id="mkkh1" class="auth-form__input" placeholder="Nhập lại mật khẩu"></div>
+                    </div>
+                    <div class="auth-form__controls">
+                        <a href="/trang-chu" class="btn auth-form__controls-back">TRỞ LẠI</a>
+                        <button onclick="xuLyDangKy()" class="btn btn--primary">ĐĂNG KÍ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/js/auth.js"></script>
+</body>
+</html>
